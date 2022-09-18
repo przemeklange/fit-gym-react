@@ -20,7 +20,7 @@ const Plans = () => {
 
             <div className="features">
               {plan.features.map((feature, i) => (
-                <div className="feature">
+                <div key={i} className="feature">
                   <img src={whiteTicks} alt="" />
                   <span key={i}>{feature}</span>
                 </div>
