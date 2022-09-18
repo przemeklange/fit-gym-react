@@ -8,21 +8,14 @@ const Join = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_mndyaxr",
-        "template_v5uo1cm",
-        form.current,
-        "W1ldX1DZhxD8yPbxF"
-      )
-      .then(
-        (result) => {
-          alert("All god");
-        },
-        (error) => {
-          alert("Its not ok");
-        }
-      );
+    emailjs.sendForm("test", "test", form.current, "test").then(
+      (result) => {
+        alert("All god");
+      },
+      (error) => {
+        alert("Its not ok");
+      }
+    );
   };
 
   return (
